@@ -1,0 +1,1105 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+  body{
+    margin: 0;
+    letter-spacing: 0;
+    font-family: 'Inter';
+    overflow-x: hidden;
+  }
+  ul{
+    padding: 0px;
+    margin: 0px;
+  }
+  li{
+    list-style-type: none;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  a{
+    text-decoration: none;
+  }
+  p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+  }
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 28px;
+    padding-bottom: 27px;
+  }
+  .navbar__menu{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  .navbar__menu li a{
+    color: #A3A3A3;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+  }
+  .navbar__menu li a:hover{
+    color: #171717;
+  }
+  .nav__btn{
+    padding: 8px 33px;
+    background-color: #329D92;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    position: relative;
+  }
+  .nav__btn::before{
+    content:  url('../images/buyBag.svg');
+    position: absolute;
+    left: 12px;
+  }
+  .burger-icon{
+    display: none;
+    font-size: 24px;
+    color: #000;
+  }
+  .mobile__menu{
+    display: none;
+    flex-direction: column;
+    background-color:#000;
+  }
+  .hero{
+    background-image: url(../images/homeimage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero__section{
+    padding-top: 84px;
+    padding-bottom: 64px;
+    display: flex;
+  }
+  .hero__left{
+    width: 50%;
+  }
+  .hero__right{
+    width: 50%;
+  }
+  .hero__info-heading{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    padding-bottom: 10px;
+    color: #171717;
+  }
+  .hero__info-text{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 30px;
+    color: #525252;
+  }
+  .hero__items{
+    padding-bottom: 24px;
+  }
+  .hero__item-list{
+    display: flex;
+    gap: 14px;
+    padding-bottom: 10px;
+  }
+  .hero__item-list--text{
+    color: #171717;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .hero__button{
+    padding-bottom: 23px;
+  }
+  .primary__button{
+    padding: 17px 147px;
+    background-color: #329D92;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    color: #FFFFFF;
+  }
+  .hero__payment{
+    display: flex;
+    gap: 2px;
+  }
+  /* Video Popup */
+  .video-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .video-content video {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff5b5b;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  .close-btn:hover {
+    background-color: #e74c3c;
+  }
+  .client__logo{
+    padding-top: 30px;
+    padding-bottom: 48px;
+  }
+  .client__info{
+    padding-bottom: 52px;
+  }
+  .client__text{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    color:#A3A3A3;
+  }
+  .logos{
+    display: flex;
+    justify-content: space-around;
+  }
+  .seatbelt{
+    background-image: url(../images/Dogseatbelt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .seatbelt__info{
+    padding-top: 50px;
+    padding-bottom: 51px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .seatbelt__right{
+    width: 38%;
+  }
+  .seatbelt__left{
+    width: 62%;
+  }
+  h2{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50.09px;
+    color: #000000;
+    padding-bottom: 20px;
+    max-width: 333px;
+  }
+  span{
+    color: #FF7B22;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .seatbelt__text{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #525252;
+    padding-bottom: 17px;
+    max-width: 632px;
+  }
+  .seatbelt__left .hero__button{
+    margin-top: 20px;
+  }
+  .product__section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .product__head h2{
+    margin: 0 auto;
+    max-width: 475px;
+    text-align: center;
+  }
+  .product__wrapper{
+    display: flex;
+    gap: 30px;
+    padding-top: 46px;
+  }
+  .product__image{
+    padding-bottom: 30px;
+  }
+  h3{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.31px;
+    color:#000000;
+  }
+  .product__text{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    color: #525252;
+    max-width: 350px;
+  }
+  .text{
+    background-color: #FFEED2;
+    box-shadow: 0px 0px 124px 0px #FFEED2;
+
+  }
+  .text__section{
+    padding-top: 42px;
+    padding-bottom: 42px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.31px;
+    color: #7A1A06;
+  }
+  .benefit__section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .benefit__head h2{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 665px;
+  }
+  .benefit__wrapper{
+    display: flex;
+  }
+  .benefit__image{
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+    width: 33.33%;
+  }
+  .benefit__content{
+    width: 33.33%;
+  }
+  .benefit__item{
+    max-width: 210px;
+    text-align: center;
+  }
+  .benefit__item img{
+    width: 60px;
+    height: 60px;
+  }
+  .benefit__item-2{
+    margin-top: 40px;
+    margin-left: 92px; 
+  }
+  .benefit__item-3{
+    margin-left: 187px;
+    margin-top: 40px;
+  }
+  .benefit__item-4{
+    margin-left: 178px;
+  }
+  .benefit__item-5{
+    margin-top: 40px;
+    margin-left: 74px;
+  }
+  .benefit__item-6{
+    margin-top: 40px;
+    margin-left: -105px;
+  }
+  .benefit__item-heading{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29.05px;
+    text-transform: uppercase;
+  }
+  .benefit__item-text{ 
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24.2px;
+   color: #525252;
+  }
+  .brand__section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(99.87deg, #FFD9A6 0%, #FFEED2 100%);
+    box-shadow: 0px 0px 124px 0px #FFEED2;
+  }
+  .brand__head{
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  .brand__head h3{
+    font-size: 36px;
+  }
+  .brand__info{
+    text-align: center;
+    margin-left: 58px;
+  }
+  .brand__text{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .brand__wrapper{
+    display: flex;
+    gap: 125px;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .brand__payment{
+    text-align: center;
+  }
+  .brand__payment .hero__payment{
+    justify-content: center;
+  }
+  .customer__section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .customer__heading{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    text-align: center;
+    max-width: 1110px;
+    padding-bottom: 40px;
+  }
+  .rating{
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .customer__rating{
+    border: 1px solid #FFEED2;
+    display: inline-flex;
+    align-items: center;
+    padding: 21px 40px;
+    background-color: #fdeed9;
+    border-radius: 64.5px;
+    gap: 46px;
+  }
+  .customer__rating-left--text{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    padding-bottom: 10px;
+  }
+  .customer__rating-right--text{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; 
+    color: #525252;
+    max-width: 157px;
+  }
+  .text-line{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #525252;
+    padding-bottom: 50px;
+  }
+  .customer__text .text-line{
+    text-align: center;
+  }
+  .slick-initialized .slick-slide{
+    display: flex !important;
+  }
+  .slick-dots li{
+    width: 10px !important;
+    height: 10px !important;
+    gap: 4px;
+  }
+  .slick-dots li.slick-active button::before {
+    color:  #FFBF7A!important; 
+}
+  .slide{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+  .slide__logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 41px;
+  }
+  .slide__text{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.31px;
+    color: #22C55E;
+  }
+  .slide__rating .text-line{
+    padding-top: 23px;
+    padding-bottom: 10px;
+    max-width: 625px;
+  }
+  .customer__payment{
+    padding-top: 61px;
+    text-align: center;
+  }
+  .customer__payment .hero__payment{
+    justify-content: center;
+  }
+  /*--guarantee-section--*/
+  .guarantee-section {
+    background-image: url(../images/homeimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 696px;
+  }
+  .guarantee-wrapper{
+    padding-top: 50px;
+  }
+  .guarantee-head{
+    max-width: 1110px;
+    text-align: center;
+  }
+  .certificate-img{
+    padding-top: 30px;
+  }
+.belt__section{
+  padding-top: 295px;
+  padding-bottom: 70px;
+}
+.belt__wrapper{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+ .belt__right-heading{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.57px;
+    color: #000000;
+    max-width: 635px;
+    padding-bottom: 46px;
+}
+  .belt-description{
+    border: 2px solid #FF7B22;
+    padding: 30px;
+    border-style: dashed;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #525252;
+    margin-bottom: 20px;
+    max-width: 626px;
+    position: relative;
+  }
+  .belt-description::before {
+    content:  url('../images/Scissors.svg');
+    position: absolute;
+    top: -31px;
+    left: 26px;
+  }
+  .belt__payment{
+    padding-top: 20px;
+  }
+  /*--timer-section--*/
+  .offer-section {
+    background: linear-gradient(99.87deg, #FFD9A6 0%, #FFEED2 100%);
+    box-shadow: 0px 0px 124px 0px #FFEED2;
+  }
+  .offer__content{
+    padding-top: 42px;
+    padding-bottom: 42px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .offer-text {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.31px;
+    color: #7A1A06;
+  }
+  
+  .countdown {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .time span {
+    color: #7A1A06;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.31px; 
+  }
+  .time label {
+    color: #7A1A06;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .faq-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+ .faq__info h2 {
+  max-width: 665px;
+  color: #000000;
+  padding-bottom: 50px;
+}
+.faq__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.faq-item {
+  border-bottom: 2px dashed #E5E5E5;
+  padding-bottom: 10px;
+  max-width: 540px;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+.faq-question .icon {
+  margin-right: 10px;
+  font-size: 28px;
+  font-weight: 500;
+  color: #000000;
+}
+.faq-question .faq-text{
+  font-size: 24px;
+  font-weight: 600
+}
+.faq-answer {
+  display: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #525252;
+  max-width: 500px;
+}
+ .faq-answer p{
+  margin-left: 28px;
+ }
+.faq-answer.active {
+  display: block;
+}
+  .footer__section{
+  background: linear-gradient(99.87deg, #FFD9A6 0%, #FFEED2 100%);
+  box-shadow: 0px 0px 124px 0px #FFEED2;
+  padding-top: 62px;
+  padding-bottom: 63px;
+  } 
+  .footer__details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__text{
+  color: #525252;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  }
+  /*-media-query for 1024px--*/
+  @media screen and (max-width: 1024px) {
+    .navbar__menu li a{
+      font-size: 18px;
+    }
+    .nav__btn{
+      font-size: 18px;
+    }
+    .hero__info-heading{
+      font-size: 45px;
+      line-height: 52.09px;
+    }
+    .hero__info-text {
+     font-size: 16px;
+     line-height: 26px;
+    }
+    .hero__item-list--text{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .primary__button{
+      padding: 10px 147px;
+    }
+    .seatbelt__text{
+      font-size: 16px;
+      font-weight: 24px;
+      max-width: 529px;
+    }
+    h2{
+      font-size: 42px;
+    }
+    span{
+      font-size: 28px;
+    }
+    .product__text{
+      font-size: 16px;
+      line-height: 22.2px;
+      max-width: 289px;
+    }
+    .benefit__head h2{
+      max-width: 644px;
+    }
+    .benefit__item-text{
+      font-size: 15px;
+      line-height: 22.2px;
+    }
+    .benefit__item-4{
+      margin-left: 153px;
+    }
+    .brand__text{
+      font-size: 24px;
+    }
+    .customer__heading{
+      font-size: 36px;
+      line-height: 44.09px;
+      max-width: 890px;
+    }
+    .belt__section{
+      padding-top: 220px;
+    }
+    .belt__right-heading{
+      font-size: 32px;
+      line-height: 38.57px;
+    }
+    .belt-description{
+      padding: 25px;
+      font-size: 18px;
+      line-height: 26px;
+      max-width: 565px;
+    }
+    .faq-question .faq-text{
+      font-size: 22px;
+    }
+    .faq-answer {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 959px){
+    .hero__info-heading{
+      font-size: 42px;
+      line-height: 48.09px;
+    }
+    .client__info{
+      padding-bottom: 30px;
+    }
+    h2{
+      font-size: 40px;
+      line-height: 45px;
+    }
+    .seatbelt__left h2{
+      max-width: 301px;
+    }
+    .benefit__head h2 {
+      max-width: 619px;
+  }
+  }
+  @media screen and (max-width: 768px){
+    h2 {
+      font-size: 28px;
+      line-height: 32px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  span {
+    font-size: 22px;
+  }
+    .navbar__menu li a{
+     font-size: 16px;
+  }
+    .nav__btn{
+      font-size: 16px;
+    } 
+    .navbar__menu{
+      gap: 24px;
+    }
+    .hero__info-heading {
+      font-size: 33px;
+      line-height: 39.09px;
+    }
+    .hero__info-text {
+      font-size: 14px;
+      line-height: 20px;
+  }
+  .hero__item-list--text {
+    font-size: 15px;
+  }
+  .primary__button {
+    padding: 8px 125px;
+  }
+  .client__text {
+    font-size: 16px;
+}  
+.client__info {
+  padding-bottom: 18px;
+} 
+.seatbelt__left h2{
+  padding-bottom: 6px;
+}
+.seatbelt__text {
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 5px;
+}
+.product__head h2{
+  max-width: 379px;
+}
+.product__text {
+  font-size: 14px;
+  line-height: 20.2px;
+}
+.text__section{
+  font-size: 20px;
+} 
+.benefit__head h2 {
+  max-width: 451px;
+}
+.benefit__item img {
+  width: 44px;
+  height: 44px;
+}
+.benefit__item-heading {
+  font-size: 18px;
+  line-height: 24.05px;
+}
+.benefit__item-4 {
+  margin-left: 92px;
+}
+.benefit__item-5 {
+  margin-left: 42px;
+}
+.benefit__item-2 {
+  margin-top: 40px;
+  margin-left: 58px;
+}
+.benefit__item-3 {
+  margin-left: 105px;
+}
+.benefit__item-6 {
+  margin-left: -51px;
+}
+.brand__head h3 {
+  font-size: 28px;
+}
+.brand__text {
+  font-size: 20px;
+}
+.customer__heading {
+  font-size: 28px;
+  line-height: 36.09px;
+  max-width: 703px;
+}
+.customer__rating-left--text{
+  font-size: 20px;
+}
+.customer__rating-right--text {
+  font-size: 15px;
+  line-height: 22px;
+  max-width: 118px;
+}
+.text-line{
+  font-size: 15px;
+  line-height: 21px;
+}
+.slide__text{
+  font-size: 25px;
+}
+.guarantee-section{
+  height: 492px;
+}
+.belt__wrapper{
+  flex-direction: column;
+}
+.belt__right-heading{
+  font-size: 28px;
+  line-height: 34.57px;
+  max-width: 427px;
+}
+.belt-description {
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 513px;
+}
+.offer-text{
+  font-size: 23px;
+}
+.time span{
+  font-size: 20px;
+}
+.time label{
+  font-size: 12px;
+}
+.faq-question .faq-text {
+  font-size: 18px;
+}
+.faq-answer {
+  font-size: 14px;
+}
+.faq-question .icon{
+  font-size: 23px;
+}
+.footer__text{
+  font-size: 14px;
+}
+}
+@media screen and (max-width: 639px){
+  .mobile__menu{
+    display: block;
+    position: absolute;
+    top: 57px;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .navbar__mobile--menu .navbar__mobile-menu-item a{
+  color: #fff;
+  padding-bottom: 10px;
+  font-weight: 400;
+  }
+  .navbar__mobile-button{
+    padding-top: 20px;
+  }
+  .navbar__menu{
+    display: none;
+  }
+  .mobile__menu.hidden{
+    display: none;
+  }
+  .navbar__menu.show{
+    display: flex;
+  }
+  .burger-icon{
+    display: block;
+  }
+  h3{
+    font-size: 24px;
+  }
+  .hero__info-heading {
+    font-size: 27px;
+    line-height: 34.09px;
+}
+.primary__button {
+  padding: 8px 162px;
+  font-size: 18px;
+}
+.seatbelt__info{
+  flex-direction: column;
+}
+.seatbelt__left{
+  width: 100%;
+}
+.seatbelt__right{
+  width: 100%;
+  text-align: center;
+}
+.seatbelt__left h2{
+  margin: 0 auto;
+  text-align: center;
+}
+.seatbelt__left .hero__button {
+  text-align: center;
+}
+.seatbelt__text{
+  margin: 0 auto;
+}
+ .belt__payment.hero__payment{
+  justify-content: center;
+} 
+.benefit__item-2 {
+  margin-left: 0;
+}
+.benefit__item-3 {
+  margin-left: 0;
+}
+.benefit__item-4 {
+  margin-left: 0;
+}
+.benefit__item-5 {
+  margin-left: 0;
+}
+.benefit__item-6 {
+  margin-left: 0;
+}
+.brand__head h3 {
+  font-size: 24px;
+}
+.guarantee-section {
+  height: 433px;
+}
+}
+@media screen and (max-width: 479px){
+  h3{
+    font-size: 18px;
+  }
+  .hero__section{
+    flex-direction: column;
+  }
+  .hero__left{
+    width: 100%;
+  }
+  .hero__right{
+    width: 100%;
+  }
+  .primary__button{
+    padding: 8px 159px;
+  }
+.logos {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+}
+.client__info {
+  padding-bottom: 30px;
+}
+.client__text {
+  font-size: 20px;
+}
+.product__wrapper{
+  flex-direction: column;
+}
+.product__details{
+  text-align: center;
+}
+.product__text{
+  margin: 0 auto;
+}
+.benefit__wrapper{
+  flex-direction: column;
+}
+.brand__wrapper{
+  flex-direction: column;
+}
+.benefit__content{
+  width: 100%;
+}
+.benefit__image{
+ width: 100%;
+}
+.benefit__item{
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+ .slide__text{
+  font-size: 16px;
+ }
+ .text-line{
+  font-size: 12px;
+  line-height: 18px;
+ }
+.customer__heading{
+  font-size: 20px;
+}
+.customer__rating{
+  padding: 9px 15px;
+}
+.customer__rating-left--text{
+  font-size: 16px;
+  padding-bottom: 6px;
+}
+h2{
+  font-size: 20px;
+}
+.guarantee-section {
+  height: 351px;
+}
+.belt__right-heading{
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 274px;
+}
+.belt-description{
+  font-size: 14px;
+}
+.offer__content{
+  align-items: center;
+}
+.offer-text{
+  font-size: 16px;
+  line-height: 22px;
+}
+.countdown{
+  gap: 12px;
+}
+.time span {
+  font-size: 16px;
+}
+.faq-question .faq-text {
+  font-size: 14px;
+}
+.faq-answer {
+  font-size: 12px;
+}
+.footer__text {
+  font-size: 12px;
+}
+}
+@media screen and (max-width: 359px){
+  .primary__button{
+    padding: 8px 119px;
+  }
+  .guarantee-section {
+    height: 328px;
+}
+ .hero__payment{
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+  .offer__content{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .faq__content{
+    display: block;
+  }
+  .faq-item{
+    padding-bottom: 18px;
+  }
+}

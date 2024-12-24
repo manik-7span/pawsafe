@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsafe</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/ps-favicon.png">
+    <link rel="stylesheet" href="css/style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+            <div class="navbar">
+                <div class="navbar__logo">
+                <img src="images/ps-logo.svg" alt="Pawsafe logo">
+                </div>
+                    <ul class="navbar__menu">
+                      <li class="navbar__menu-item"><a href="#">Steps</a></li>
+                      <li class="navbar__menu-item"><a href="#">About</a></li>
+                      <li class="navbar__menu-item"><a href="#">Benefits</a></li>
+                      <li class="navbar__menu-item"><a href="#">FAQs</a></li>
+                      <div class="navbar__button">
+                        <img src="images/buyBag.svg" alt="buybag">
+                        <a class="nav__btn">Buy Now</a>
+                      </div>
+                    </ul>
+                    <div class="burger-icon" onclick="toggleMenu()">
+                        &#9776; <!-- This is the burger icon -->
+                    </div>
+            </div>
+        </nav>
+        <!--resposive navbar-->
+        <div class="mobile__menu hidden">
+            <ul class="navbar__mobile--menu">
+                <li class="navbar__mobile-menu-item"><a href="#">Steps</a></li>
+                <li class="navbar__mobile-menu-item"><a href="#">About</a></li>
+                <li class="navbar__mobile-menu-item"><a href="#">Benefits</a></li>
+                <li class="navbar__mobile-menu-item"><a href="#">FAQs</a></li>
+                <div class="navbar__mobile-button">
+                  <a class="nav__btn">Buy Now</a>
+                </div>
+              </ul>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+                <div class="container">
+                    <div class="hero__section">
+                    <div class="hero__left">
+                    <div class="hero__info">
+                        <h1 class="hero__info-heading">Protect Your Furry Best Friend During Car Rides!</h1>
+                        <p class="hero__info-text">Humans wear seat belts to protect themselves in case of an accident, so shouldn’t our beloved dogs be protected, too? The PawSafe Dog Seat Belt is the easiest, most effective way to restrain your pup in the car.</p>
+                    </div>
+                    <div class="hero__items">
+                        <div class="hero__item-list">
+                        <img src="images/Bullet.svg" alt="bullet_svg">
+                        <p class="hero__item-list--text" >Suitable for the front or back seat.</p>
+                    </div>
+                    <div class="hero__item-list">
+                        <img src="images/Bullet.svg" alt="bullet_svg">
+                        <p class="hero__item-list--text">Unique elastic bungee is designed to absorb shock.</p>
+                    </div>
+                    <div class="hero__item-list">
+                        <img src="images/Bullet.svg" alt="bullet_svg">
+                        <p class="hero__item-list--text">Adjustable tether: One-size-fits-all.</p>
+                    </div>
+                    </div>
+                    <div class="hero__button">
+                        <a href="#" class="primary__button">Get it Now</a>
+                    </div>
+                    <div class="hero__payment">
+                        <div class="payment__logo">
+                        <img src="images/Paypal logo.png" alt="Paypal_png">
+                    </div>
+                    <div class="payment__logo">
+                        <img src="images/Visa logo.png" alt="Visa_png">
+                    </div>
+                    <div class="payment__logo">
+                        <img src="images/Mastercard logo.png" alt="Mastercard_png">
+                    </div>
+                    <div class="payment__logo">
+                        <img src="images/Discover logo.png" alt="Discover_png">
+                        </div>
+                        <div class="payment__logo">
+                        <img src="images/Express logo.png" alt="Express_png">
+                        </div>
+                        <div class="payment__logo">
+                        <img src="images/Verisign logo.png" alt="Verisign_png">
+                        </div>
+                        <div class="payment__logo">
+                        <img src="images/Mcafee logo.png" alt="Mcafee_png">
+                        </div>
+                        <div class="payment__logo">
+                        <img src="images/Norton logo.png" alt="Norton_png">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="hero__right">
+                    <div class="hero__thumbnail">
+                        <img
+                          src="images/thumbnail.png" alt="Play Video"id="thumbnail"/>
+                      </div>
+                    
+                      <!-- Video Popup -->
+                      <div class="video-popup" id="videoPopup">
+                        <div class="video-content">
+                          <span class="close-btn" id="closeBtn">&times;</span>
+                          <video id="video" controls>
+                            <source src="https://www.youtube.com/watch?v=sMFNGMxH8uM" >
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <section class="client">
+            <div class="client__logo">
+                <div class="container">
+                    <div class="client__info">
+                        <p class="client__text">As Seen On</p>
+                    </div>
+                    <div class="logos">
+                      <div><img src="images/CBS logo.svg" alt="logo"></div>
+                      <div><img src="images/NBS logo.svg" alt="logo"></div>
+                      <div><img src="images/FOX logo.svg" alt="logo"></div>
+                       <div><img src="images/USA logo.svg" alt="logo"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seatbelt">
+            <div class="container">
+                <div class="seatbelt__info">
+                    <div class="seatbelt__right">
+                        <img src="images/Dog-image.png" alt="dog__image">
+                    </div>
+                    <div class="seatbelt__left">
+                        <h2>About the <br><span>PawSafe Dog Seat Belt</span></h2>
+                        <p class="seatbelt__text">The PawSafe Dog Seat Belt was designed and backed by veterinarians with a simple vision of keeping our fur babies safe during car rides. This belt clasps onto your dog’s harness on one end and buckles into your car’s seat belt on the other end.</p>
+                        <div class="hero__button">
+                            <a href="#" class="primary__button">Get it Now</a>
+                        </div>
+                        <div class="hero__payment">
+                            <img src="images/Paypal logo.png" alt="Paypal_png">
+                            <img src="images/Visa logo.png" alt="Visa_png">
+                            <img src="images/Mastercard logo.png" alt="Mastercard_png">
+                            <img src="images/Discover logo.png" alt="Discover_png">
+                            <img src="images/Express logo.png" alt="Express_png">
+                            <img src="images/Verisign logo.png" alt="Verisign_png">
+                            <img src="images/Mcafee logo.png" alt="Mcafee_png">
+                            <img src="images/Norton logo.png" alt="Norton_png">
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="product__section">
+                <div class="product__head">
+                    <h2><span>With the PawSafe Dog Seat Belt,</span> it's easy and safe</h2>
+                </div>
+                <div class="product__wrapper">
+                <div class="product__details">
+                   <img src="images/Safe Image.png" alt="safe_image"  class="product__image">
+                   <h3>Safe</h3>
+                   <p class="product__text">This dog seat belt has been researched, tested and approved by experts.</p>
+                </div>
+                <div class="product__details">
+                    <img src="images/Comfortable.png" alt="Comfortable_image"  class="product__image">
+                    <h3>Comfortable</h3>
+                    <p class="product__text">The 360 degree swivel clasp allows your dog to lay, sit or stand.</p>
+                 </div>
+                 <div class="product__details">
+                    <img src="images/Effective.png" alt="Effective_image" class="product__image">
+                    <h3>Effective</h3>
+                    <p class="product__text">No more dangerous distractions or risky car rides for you and your pooch.</p>
+                 </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="text">
+            <div class="container">
+                <div class="text__section">
+                    <p>The Best Way to Protect Your Dog in Case of a Car Accident</p>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <div class="benefit__section">
+                    <div class="benefit__head">
+                        <h2>Discover the Benefits of the<span> PawSafe Dog Seat Belt</span></h2>
+                    </div>
+                    <div class="benefit__wrapper">
+                    <div class="benefit__content">
+                        <div class=" benefit__item benefit__item-1">
+                            <img src="images/benefit-logo.svg" alt="benefit__logo">
+                            <h3  class="benefit__item-heading">Easy To Use</h3>
+                            <p  class="benefit__item-text">Attach it to your dog's harness like a leash.</p>
+                        </div>
+                        <div class=" benefit__item benefit__item-2">
+                            <img src="images/benefit-logo.svg" alt="benefit__logo">
+                            <h3  class="benefit__item-heading">Universal</h3>
+                            <p  class="benefit__item-text">The buckle attachment fits most car makes and models.</p>
+                        </div>
+                        <div class="benefit__item benefit__item-3">
+                            <img src="images/benefit-logo.svg" alt="benefit__logo">
+                            <h3  class="benefit__item-heading">Durable</h3>
+                            <p  class="benefit__item-text">Thick Nylon strap is anti-chew and won’t rip or tangle.</p>
+                        </div>
+                        </div>
+                    <div class="benefit__image">
+                        <img src="images/benefitbelt.png" alt="belt__image">
+                    </div>
+                    <div class="benefit__content">
+                        <div class="benefit__item benefit__item-4">
+                            <img src="images/benefit-logo.svg" alt="benefit__logo">
+                            <h3  class="benefit__item-heading">Peace of Mind</h3>
+                            <p  class="benefit__item-text">You can drive without any distractions!</p>
+                        </div>
+                        <div class="benefit__item benefit__item-5">
+                            <img src="images/benefit-logo.svg" alt="benefit__logo">
+                            <h3  class="benefit__item-heading">Effective</h3>
+                            <p  class="benefit__item-text">Protects dogs during sudden braking and accidents.</p>
+                        </div>
+                        <div class=" benefit__item benefit__item-6">
+                            <img src="images/benefit-logo.svg" alt="benefit__logo">
+                            <h3  class="benefit__item-heading">Comfortable</h3>
+                            <p  class="benefit__item-text">Dogs can stand, lay or sit as they wish.</p>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="brand">
+            <div class="brand__section">
+                <div class="container">
+                <div class="brand__head">
+                    <h3><span>PawSafe Dog Seat Belt,</span><br> Stop! Don't waste money on dangerous alternatives</h3>
+                </div>
+                <div class="brand__wrapper">
+                    <div class="brand__left">
+                        <div class="brand__info">
+                        <img src="images/Brand X logo.svg" alt="brand_logo">
+                        <p class="brand__text">Price Starts at <span>$249</span></p>
+                    </div>
+                        <img src="images/brandX dog.png" alt="brandx__dog">
+                    </div>
+                    <div class="brand__right">
+                        <div class="brand__info">
+                        <img src="images/ps-logo.svg" alt="brand_logo">
+                        <p class="brand__text">Price Starts at <span>$249</span></p>
+                    </div>
+                        <img src="images/pawsafe-dog.png" alt="pawsafe__dog">
+                    </div>
+                </div>
+                <div class="brand__payment">
+                <div class="hero__button">
+                    <a href="#" class="primary__button">Get it Now</a>
+                </div>
+                <div class="hero__payment">
+                    <img src="images/Paypal logo.png" alt="Paypal_png">
+                    <img src="images/Visa logo.png" alt="Visa_png">
+                    <img src="images/Mastercard logo.png" alt="Mastercard_png">
+                    <img src="images/Discover logo.png" alt="Discover_png">
+                    <img src="images/Express logo.png" alt="Express_png">
+                    <img src="images/Verisign logo.png" alt="Verisign_png">
+                    <img src="images/Mcafee logo.png" alt="Mcafee_png">
+                    <img src="images/Norton logo.png" alt="Norton_png">
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="customer">
+            <div class="customer__section">
+                <div class="container">
+                    <div class="customer__head">
+                        <h3 class="customer__heading">See What Our Satisfied Customers Have to Say
+                          <span> PawSafe Dog Seat Belt</span></h3>
+                    </div>
+                    <div class="rating">
+                    <div class="customer__rating">
+                        <div class="customer__rating-left">
+                            <p class="customer__rating-left--text">4.9 STAR RATING</p>
+                            <img src="images/customer-rating.svg" alt="rating">
+                        </div>
+                        <div class="customer__rating-right">
+                            <p class="customer__rating-right--text">1,245 Reviews and Counting</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="customer__text">
+                 <p class="text-line">“I like the length and security the PawSafe Seat Belt gives my Husky to be comfortable and safe.”</p>
+                </div>
+                <div class="customer__slider">
+                    <div class="slide">
+                        <div class="slide__left">
+                        <img src="images/slide-img.png" alt="slide__image">
+                    </div>
+                    <div class="slide__right">
+                        <div class="slide__logo">
+                        <img src="images/Verified-logo.svg" alt="logo">
+                        <p class="slide__text">Verified Buyer</p>
+                    </div>
+                    <div class="slide__rating">
+                        <img src="images/brown-rating.svg" alt="brown__rating">
+                        <p class="text-line">“I like the length and security the PawSafe Seat Belt gives my Husky to be comfortable and safe.”</p>
+                        <h3>N*******</h3>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__left">
+                        <img src="images/slide-img.png" alt="slide__image">
+                    </div>
+                    <div class="slide__right">
+                        <div class="slide__logo">
+                        <img src="images/Verified-logo.svg" alt="logo">
+                        <p class="slide__text">Verified Buyer</p>
+                    </div>
+                    <div class="slide__rating">
+                        <img src="images/brown-rating.svg" alt="brown__rating">
+                        <p class="text-line">“I like the length and security the PawSafe Seat Belt gives my Husky to be comfortable and safe.”</p>
+                        <h3>N*******</h3>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__left">
+                        <img src="images/slide-img.png" alt="slide__image">
+                    </div>
+                    <div class="slide__right">
+                        <div class="slide__logo">
+                        <img src="images/Verified-logo.svg" alt="logo">
+                        <p class="slide__text">Verified Buyer</p>
+                    </div>
+                    <div class="slide__rating">
+                        <img src="images/brown-rating.svg" alt="brown__rating">
+                        <p class="text-line">“I like the length and security the PawSafe Seat Belt gives my Husky to be comfortable and safe.”</p>
+                        <h3>N*******</h3>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="customer__payment">
+                    <div class="hero__button">
+                        <a href="#" class="primary__button">Get it Now</a>
+                    </div>
+                    <div class="hero__payment">
+                        <img src="images/Paypal logo.png" alt="Paypal_png">
+                        <img src="images/Visa logo.png" alt="Visa_png">
+                        <img src="images/Mastercard logo.png" alt="Mastercard_png">
+                        <img src="images/Discover logo.png" alt="Discover_png">
+                        <img src="images/Express logo.png" alt="Express_png">
+                        <img src="images/Verisign logo.png" alt="Verisign_png">
+                        <img src="images/Mcafee logo.png" alt="Mcafee_png">
+                        <img src="images/Norton logo.png" alt="Norton_png">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="guarantee">
+            <div class="guarantee-section">
+            <div class="container">
+            <div class="guarantee-wrapper">
+                <h2 class="guarantee-head">Our 100% Ironclad Satisfaction Guarantee</h2>
+                <img src="images/Certificate.png" alt="Money Back Guarantee" class="certificate-img">
+            </div>
+        </div>
+    </div>
+        </section>
+        <section class="belt">
+            <div class="belt__section">
+            <div class="container">
+                <div class="belt__wrapper">
+                <div class="belt__left">
+                    <img src="images/Dog_Seatbelt.png" alt="Dog Seat Belt" class="belt_image">
+                </div>
+                <div class="belt__right">
+                    <h4 class="belt__right-heading">The Best Way to Protect Your Dog in Case of a Car Accident</h4>
+                    <p class="belt-description">You can only purchase GuardCard online. It is not available in stores. Act today and receive 40% off your GuardCard. Order now - while supplies last!
+                    </p>
+                    <div class="belt__payment">
+                        <div class="hero__button">
+                            <a href="#" class="primary__button">Get it Now</a>
+                        </div>
+                        <div class="hero__payment">
+                            <img src="images/Paypal logo.png" alt="Paypal_png">
+                            <img src="images/Visa logo.png" alt="Visa_png">
+                            <img src="images/Mastercard logo.png" alt="Mastercard_png">
+                            <img src="images/Discover logo.png" alt="Discover_png">
+                            <img src="images/Express logo.png" alt="Express_png">
+                            <img src="images/Verisign logo.png" alt="Verisign_png">
+                            <img src="images/Mcafee logo.png" alt="Mcafee_png">
+                            <img src="images/Norton logo.png" alt="Norton_png">
+                        </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+        <section class="offer">
+            <div class="offer-section">
+                <div class="container">
+                    <div class="offer__content">
+                <div class="offer__description">
+                <p class="offer-text">Special Offer Ends...</p>
+            </div>
+                <div class="countdown">
+                  <img src="images/timer_arrow.svg" alt="arrow__btn" class="arrow">
+                  <div class="time">
+                    <span id="days">1</span>
+                    <label>Days</label>
+                  </div>
+                  <div class="time">
+                    <span id="hours">23</span>
+                    <label>Hours</label>
+                  </div>
+                  <div class="time">
+                    <span id="minutes">34</span>
+                    <label>Minutes</label>
+                  </div>
+                  <div class="time">
+                    <span id="seconds">32</span>
+                    <label>Seconds</label>
+                  </div>
+                  <img src="images/Offer-arrow.svg" alt="arrow__btn" class="arrow">
+                </div>
+            </div>
+              </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="faq-section">
+            <div class="container">
+                <div class="faq__info">
+                <h2><span>PawSafe Dog Seat Belt,</span> <br>Frequently Asked Questions</h2>
+            </div>
+                <div class="faq__content">
+                  <div class="faq-item">
+                    <div class="faq-question active">
+                      <span class="icon">+</span>
+                      <p class="faq-text">Can I use this with a collar?</p>
+                    </div>
+                    <div class="faq-answer">
+                      <p>No, it's recommended for use with a harness for maximum safety.</p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question">
+                      <span class="icon">+</span>
+                      <p class="faq-text">What size do I need?</p>
+                    </div>
+                    <div class="faq-answer">
+                      <p>Sizes depend on the weight and size of your dog. Refer to our size chart.</p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question">
+                      <span class="icon">+</span>
+                      <p class="faq-text">Does this protect against whiplash?</p>
+                    </div>
+                    <div class="faq-answer">
+                      <p>Yes, the seat belt is designed to minimize whiplash risk in accidents.</p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question">
+                      <span class="icon">+</span>
+                      <p class="faq-text">Can I use this for a puppy?</p>
+                    </div>
+                    <div class="faq-answer">
+                      <p>Yes, but ensure it fits properly to provide the best protection.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__section">
+            <div class="container">
+                <div class="footer__details">
+                <div class="footer__logo">
+                    <img src="images/ps-logo.svg" alt="logo">
+                </div>
+                <div class="footer_info">
+                    <p class="footer__text">© 2021 PawSafe.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script/first.js"></script>  
+</body>
+</html>
